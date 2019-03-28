@@ -1,0 +1,30 @@
+body{
+    
+    text-align: center;
+    background-image:url("../images/background.jpg");
+}
+
+.jumbotron{
+    margin:100px;
+}
+
+#start{
+    font-weight:bold;
+    width: 40%;
+    height: 100px;
+    margin-top: 50px;
+    padding-top: 30px;
+    background-image:url("../images/captain.jpg")
+    
+    
+}
+
+
+h2{
+    color:whitesmoke;
+}
+button{
+    width:70%;
+    height:50px;
+    margin:10px;
+}
