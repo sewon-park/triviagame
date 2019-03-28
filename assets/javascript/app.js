@@ -26,7 +26,69 @@ var questionSet= [
     
         a: "The Tesseract"
     
-        }
+        },
+
+    {
+        q: "Which of the following Avengers from the comics is not in the movi?",
+
+        options: ["Black Widow",
+        "Hawkeye", 
+        "Captain America", 
+        "The Wasp"],
+
+        a: "The Wasp"
+
+    },
+
+    {
+        q: " What is Agent Coulson's first name?",
+
+        options: ["Steven",
+        "Phil", 
+        "Cal", 
+        "John"],
+
+        a: "Phil"
+
+    },
+
+    {
+        q: "When Loki is locked up in the S.H.I.E.L.D. helicarrier, who gets him to reveal that he is planning to get Banner to change into the Hulk and destroy the ship from within?",
+
+        options: ["Nick Fury",
+        "Thor", 
+        "Iron Man", 
+        "Black Widow"],
+
+        a: "Black Widow"
+
+    },
+
+    {
+        q: "When the Avengers are in the streets of New York Captain America starts issuing orders. What are his orders to the Hulk?",
+
+        options: ["Smash",
+        "Turn back into Banner and help Tony reinitialize his armor.", 
+        "Destroy the force field surrounding the machine that is keeping the hole open.", 
+        "Throw a nuclear bomb into the rift in space."],
+
+        a: "Smash"
+
+    },
+
+    {
+        q: "Which Avenger's girlfriend makes an appearance in the film that isn't just a quick picture or a flashback to one of their solo movies?",
+
+        options: [" Jane Foster (Thor)",
+        "Betty Ross (Hulk)", 
+        "Peggy Carter (Captain America)", 
+        "Pepper Potts (Iron Man)"],
+
+        a: "Pepper Potts (Iron Man)"
+
+    }
+
+
 
 ];
 
@@ -40,26 +102,20 @@ var correctCounter = 0;
 var wrongCounter = 0;
 var unanweredCounter = 0;
 
-//before start: reset game counters hide question & option buttons
+
+
+
 
 var initialize = function (){
-    $("#remainingTime").hide()
-    $("#question").hide();
-    $("#options").hide();
-    }
-
-
-
-
-
+    $("#gameScreen").hide()
+    };
+            
 
 
 var startGame = function (){
-    //hide start button and show timer, question, and options
+    //hide start button 
     $("#start").hide();
-    $("#remainingTime").show()
-    $("#question").show();
-    $("#options").show();
+    $("#gameScreen").show()
     generateQuestion()
     timer();
     userTimeout();
@@ -102,7 +158,7 @@ var startGame = function (){
     
 
     var userTimeout = function(){
-        if(timeRemaining ===0){
+        if(timeRemaining === 0){
             $("gameScreen").html("You ran out of time!")
             unanweredCounter ++;
 
@@ -172,10 +228,11 @@ var startGame = function (){
         wrongCounter =0;
     } 
 
-    
 
-initialize();
-$("#start").on("click", startGame());
+    initialize();
+
+    $("#start").on("click", startGame);
+
 
 
 
