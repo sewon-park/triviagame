@@ -159,7 +159,7 @@ var startGame = function (){
 
     var userTimeout = function(){
         if(timeRemaining === 0){
-            $("gameScreen").html("You ran out of time!")
+            $("gameScreen").html("<p>You ran out of time!</p>")
             unanweredCounter ++;
 
             setTimeout(nextQuestion,4000);
@@ -174,7 +174,7 @@ var startGame = function (){
     console.log(userChoice);
     
     if(userChoice === questionSet[currentSet].a){
-        $("#gameScreen").html("Good Job!");
+        $("#gameScreen").html("<p>Correct. Good Job!</p>");
         clearInterval(timeRemaining);
         correctCounter ++;
         currentSet ++;
@@ -182,7 +182,7 @@ var startGame = function (){
           
     }
     else if(userChoice != questionSet[currentSet].a){
-        $("#gameScreen").html("Wrong Answer! The Answer Is "  + questionSet[currentSet].a );
+        $("#gameScreen").html("<p>Wrong Answer! The Answer Is "  + questionSet[currentSet].a +"</p>");
         wrongCounter ++;
         currentSet ++;
         setTimeout(nextQuestion, 4000);

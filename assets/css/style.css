@@ -10,10 +10,10 @@ body{
 
 #start{
     font-weight:bold;
-    width: 40%;
-    height: 100px;
+    width: 50%;
+    height: 150px;
     margin-top: 50px;
-    padding-top: 30px;
+    padding-top: 50px;
     background-image:url("../images/captain.jpg")
     
     
@@ -22,11 +22,21 @@ body{
 
 h2{
     color:whitesmoke;
+    font-size: 50px;
 }
 button{
     width:70%;
-    height:50px;
+    height:auto;
     margin:10px;
     background-color:lightslategray;
     color:white;
+    font-size:20px;
+}
+
+p{
+    font-size:25px;
+}
+
+#remainingTime{
+    font-size: 30px;
 }
