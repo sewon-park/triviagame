@@ -6,4 +6,4 @@ Users are asked questions about Avergers: Age of Ultron. Test your knowledge abo
 * if you choose wrong answer or don't answer within 15 seconds, the game will display the correct answer before moving on.
 * your final score (# of correct answer, wrong answer, unaswered) will be displayed at the end
 
-<img src = "assets/images/screenshot.JPG width=700px>
+<img src = "assets/images/screenshot.JPG" width="700">
